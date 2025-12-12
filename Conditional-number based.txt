@@ -1,0 +1,505 @@
+NUMBER BASED
+
+Q1.Java Program to find greatest among two numbers
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int result=(a>b)?a:b;
+        System.out.println(result);
+
+    }
+}
+input:20  30
+output:30
+
+
+Q2.Java Program to find smallest among two numbers
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int result=(a<b)?a:b;
+        System.out.println(result);
+
+    }
+}
+input:20    30
+output:20
+
+
+Q3.Java Program to find whether the given number is odd or even number
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+       if(a%2==0){
+        System.out.println("Even");
+       }
+       else{
+        System.out.println("Odd");
+       }
+
+    }
+}
+input:3
+output:Odd
+
+
+Q4.Java Program to find whether the difference between two numbers is even or odd
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int diff=a-b;
+       if(diff%2==0){
+        System.out.println("Even");
+       }
+       else{
+        System.out.println("Odd");
+       }
+
+    }
+}
+input:20   10           input:14   7
+output:Even             output:Odd
+
+
+Q5.Java Program to find whether the given number is 3 digit number or not
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if((a>=100 && a<=999)||(a>=-100 && a<=-999))
+            System.out.println("It is a 3 digit number");
+        
+        else{
+            System.out.println("It is not a 3 digit number");
+        }
+    }
+}
+input:126                            input:26
+output:it is a 3 digit number        output:It is not a 3 digit number
+
+
+
+Q6.Java Program to find greatest among three numbers
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        int result=(a>b && a>c)?a:(b>c)?b:c;
+        System.out.println(result);
+    }
+}
+input:1   2   3
+output:3
+
+
+Q7.Java Program to find smallest among three numbers
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        int result=(a<b && a<c)?a:(b<c)?b:c;
+        System.out.println(result);
+    }
+}
+input:1  2  3
+output:1
+
+
+Q8.Java Program to find whether the last digit of given number is divisible by 3
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int lastdig=a%10;
+        if(lastdig%3==0){
+            System.out.println("It is divisible by 3");
+        }
+        else{
+            System.out.println("Not divisible by 3");
+        }
+    }
+}
+input:126                       input:122
+output:It is divisible by 3     output:It is not divisible by 3
+
+
+
+Q9.Java Program to check odd or even using bitwise operator
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if((a & 1)==0){
+           System.out.println("Even");
+        }
+        else{
+            System.out.println("Odd");
+        }
+    }
+}
+input:4
+output:Even
+
+
+Q10.Java Program to check whether the sum of two numbers is even or odd
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int sum=a+b;
+        if(sum%2==0){
+            System.out.println("Even");
+        }
+        else{
+            System.out.println("Odd");
+        }
+    }
+}
+input:5   5
+output:10
+
+
+Q11. Java Program to check whether the first digit of a 3 digit number is odd or even
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int res=a%10;
+        res=res%10;
+        if(res%3==0){
+            System.out.println("even");
+        }
+        else{
+            System.out.println("odd");
+        }
+    }
+}
+input:650
+output:Even
+
+
+Q12. Java Program to check whether the last digit of a number is odd or even
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int res=a%10;
+       
+        if(res%2==0){
+            System.out.println("even");
+        }
+        else{
+            System.out.println("odd");
+        }
+    }
+}
+input:126
+output:even
+
+
+Q13. Java Program to check whether a number is positive, negative, or zero
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a<0){
+            System.out.println("Negative");
+        }
+        else if(a==0){
+            System.out.println("Zero");
+        }
+        else{
+            System.out.println("positive");
+        }
+    }
+}
+input:34          input:0       input:-12
+output:positive   output:zero   output:negative
+
+
+Q14. Java Program to check whether a number is divisible by both 3 and 5
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if((a%3==0) && (a%5==0)){
+            System.out.println("It is divisible by both 3 and 5");
+        }
+        else{
+            System.out.println("Not divisible by both 3 and 5");
+        }
+    }
+}
+input:15
+output:It is divisible by both 3 and 5
+
+
+Q15. Java Program to check whether a number is divisible by either 3 or 7
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if((a%3==0) || (a%7==0)){
+            System.out.println("It is divisible by both 3 or 7");
+        }
+        else{
+            System.out.println("Not divisible by both 3 or 7");
+        }
+    }
+}
+input:21
+output:it is divisible by 3 or 7
+
+
+ Q16. Java Program to check whether a number is divisible by both 2 and 5 but not by 8.
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if((a%2==0) || (a%5==0)){
+            System.out.println("It is divisible by both 2 and 5");
+            if(a%8!=0){
+                System.out.println("Not divisible by 8");
+            }
+        }
+        else{
+            System.out.println("It is not divisible by 2 and 5");
+        }
+        
+    }
+}
+input:20
+output:it is divisible by both 5 and 2
+not divisible by 8
+
+
+
+Q17. Java Program to check whether two numbers have the same last digit
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        a=a%10;
+        b=b%10;
+        String result=(a==b)?"equal":"not equal";
+        System.out.println(result);
+    }
+}
+input:25   32
+output:not equal
+
+
+Q18. Java Program to check whether a number is a single-digit, two-digit, or three-digit number
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        
+        if(a<=9)
+             System.out.println("It is a single digit number");
+
+            
+        else  if((a>=9) &&(a<=99))
+             System.out.println("It is a double digit number");
+
+           
+        else
+             System.out.println("It is a three digit number");
+        }
+    }
+input:2
+output:it is single digit number
+
+
+Q19. Java Program to check whether the product of two numbers is positive or negative
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int product=a*b;
+        if(product<=0)
+            System.out.println("Negative");
+        else
+            System.out.println("Positive");
+    }
+}
+input:2  4             input:2   -4
+output:positive        output:negative
+
+
+Q20.Java Program to check whether the ASCII value of a character is even or odd.
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        char ch=sc.next().charAt(0);
+        int ascii=((int)ch);
+        if(ascii%2==0)
+            System.out.println("Even");
+        else
+            System.out.println("Odd");
+    }
+}
+input:a          input:B
+output:odd       output:even
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
