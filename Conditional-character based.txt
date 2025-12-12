@@ -1,0 +1,174 @@
+
+CHARACTER BASED
+
+
+Q1. Java Program to check whether a given character is a vowel or consonant
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        char ch=sc.next().toLowerCase().charAt(0);
+       if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+        System.out.println("vowel");
+       else
+        System.out.println("consonant");
+}
+}
+input:A         input:b
+output:vowel    output:consonant
+
+
+Q2. Java Program to check whether a given character is uppercase, lowercase, digit, or special symbol
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        char ch=sc.next().charAt(0);
+        int type=(ch>='A'&&ch<='Z')?1:(ch>='a'&&ch<='z')?2:(ch>='0'&&ch<='9')?3:4;
+        switch(type){
+            case 1:
+                System.out.println("Uppercase letter");
+               break;
+            case 2:
+                System.out.println("Lowercase letter");
+                break;
+            case 3:
+                System.out.println("Digit");
+                break;
+            default:
+                System.out.println("Symbol");
+                break;
+        }
+}
+}
+input:A                      input:*
+output:uppercase letter      output:symbol
+
+
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        char ch=sc.next().toUpperCase().charAt(0);
+        int type=(ch>='A'&&ch<='Z')?1:2;
+        switch(type){
+            case 1:
+                System.out.println("Alphabet");
+               break;
+           
+            default:
+                System.out.println("Not an alphabet");
+                break;
+        }
+}
+}
+input:d                input:3
+output:alphabet        output:not an alphabet
+
+
+
+Q4. Java Program to check whether a character is a digit or not
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        char ch=sc.next().charAt(0);
+        int type=(ch>='0'&&ch<='9')?1:2;
+        switch(type){
+            case 1:
+                System.out.println("digit");
+               break;
+           
+            default:
+                System.out.println("Not a digit");
+                break;
+        }
+}
+}
+input:3         input:d
+output:digit    output:not a digit
+
+
+
+Q5. Java Program to check whether two characters are equal or not
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        char ch1=sc.next().charAt(0);
+        char ch2=sc.next().charAt(0);
+        if(ch1==ch2)
+              System.out.println("same");
+        else
+              System.out.println("not same");
+}
+}
+input:a  a     input:b   h
+output:same    output:not same
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
