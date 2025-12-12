@@ -1,0 +1,149 @@
+
+YEAR BASED
+
+
+
+Q1. Java Program to check whether a year is a leap year or not
+import java.util.Scanner;
+public class q1 {
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    int yr=sc.nextInt();
+    if((yr%4==0 && yr%400==0)||(yr%100!=0)){
+      System.out.println("leap year");
+    }
+    else{
+      System.out.println("Not a leap year");
+    }
+
+    
+  }
+}
+input:2025               input:1900
+output:leap year         output:not a leap year
+
+
+
+Q2.Java Program to check whether a given year is a century year or not.
+import java.util.Scanner;
+public class q1 {
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    int yr=sc.nextInt();
+    if(yr%100==0){
+      System.out.println("Century year");
+    }
+    else{
+      System.out.println("Not a century year");
+    }
+  }
+}
+input:2000               input:2024
+output:century year      output:not a century year
+
+
+
+Q3.Java Program to check whether the first two digits and last two digits of a year are equal.
+import java.util.Scanner;
+public class q1 {
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    int yr=sc.nextInt();
+    int frst2=yr/100;
+    int lst2=yr%100;
+    if(frst2==lst2){
+      System.out.println("equal");
+    }
+    else
+      System.out.println("not equal");
+  }
+}
+input:2020     input:2021
+output:equal   output:not equal
+
+
+
+Q4.Java Program to check whether two given years have the same last digit.
+import java.util.Scanner;
+public class q1 {
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    int yr=sc.nextInt();
+    int yr2=sc.nextInt();
+    int lst1=yr%100;
+    int lst2=yr2%100;
+    if(lst1==lst2){
+      System.out.println("equal");
+    }
+    else
+      System.out.println("not equal");
+  }
+}
+input:2020  1920      input:2021  2020
+output:equal          output:not equal
+
+
+
+Q5.Write a Java Program to check whether a given year and month combination is valid and print the number of days in that month (consider leap years for February).
+import java.util.Scanner;
+public class q1 {
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    int yr=sc.nextInt();
+    int mon=sc.nextInt();
+    if(yr<=0||mon<1||mon>12){
+      System.out.println("Invalid year or month");
+    }
+    int days=0;
+    switch(mon){
+      case 1: case 3:case 5:case 7:case 8:case 10:case 12:
+        days=31;
+        break;
+      case 4:case 6:case 9:case 11:
+        days=30;
+        break;
+      case 2:
+        if((yr%4==0 &&yr%100!=0)||yr%400==0)
+          days=29;
+        else
+          days=28;
+        break;
+    }
+    System.out.println(days);
+  }
+}
+input:2024  2       input:2025  2
+output:29           output:28
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
