@@ -1,0 +1,178 @@
+
+GEOMETRY BASED
+
+
+
+Q1. Java Program to check whether a triangle is equilateral, isosceles, or scalene
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+         int y=sc.nextInt();
+          int z=sc.nextInt();
+          if(x==y && y==z)
+             System.out.println("Equilateral");
+          else if(x==y &&y!=z)
+             System.out.println("Isosceles");
+          else
+             System.out.println("Scalene");
+}
+}
+input:1  2  3          input: 1 2 2         input:2  2  2
+output:Scalene         output:Isoscales     output:equilateral
+
+
+
+Q2. Java Program to check whether a triangle is right-angled or not
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+         int y=sc.nextInt();
+          int z=sc.nextInt();
+        if(x*x==y*y+z*z||y*y==x*x+z*z||z*z==x*x+y*y){
+          System.out.println("Right angle triangle");
+        }
+        else{
+          System.out.println("Not a right angle triangle");
+        }
+}
+}
+input:3  4  5
+output:right angle triangle
+
+
+Q3. Java Program to check whether a point (x, y) lies in which quadrant
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+         int y=sc.nextInt();
+         if(x>0&&y>0){
+          System.out.println("1st quadrant");
+         }
+         else if(x<0&&y>0){
+           System.out.println("2nd quadrant");
+         }
+         else if(x<0&&y<0){
+           System.out.println("3rd quadrant");
+         }else{
+                    System.out.println("4th quadrant");
+         }
+}
+}
+input:-5  -3
+output:3rd quadrant
+
+Q4. Java Program to check whether the sum of three angles forms a valid triangle.
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+         int y=sc.nextInt();
+         int z=sc.nextInt();
+         int sum=x+y+z;
+         if(sum==180&&x>0&&y>0&&z>0){
+          System.out.println("valid traingle");
+         }
+         else{
+          System.out.println("invalid traingle");
+         }
+         
+}
+}
+input:90 90 10           input:60 60 60
+output:invalid triangle  output:valid traingle
+
+
+
+Q5. Java Program to check whether three sides form a valid triangle
+import java.util.Scanner;
+public class q1 {
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+         int y=sc.nextInt();
+         int z=sc.nextInt();
+         if(x+y>z && y+z>x && x+z>y){
+          System.out.println("It is valid traingle");
+         }
+         else
+           System.out.println("It is not a valid traingle");
+         
+}
+}
+input:7  5  10                   input:1  10  12
+output:it is a valid triangle    output:it is not a valid triangle
+
+
+
+Q6. Write a Java Program to check whether four sides form a square or rectangle.
+import java.util.Scanner;
+public class q1 {
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    int c=sc.nextInt();
+    int d=sc.nextInt();
+    if(a==b&&b==c&&c==d&&d==a){
+      System.out.println("Square");
+    }
+    else if(a==c&&b==d){
+      System.out.println("Rectangle");
+    }
+    else{
+      System.out.println("Enter a valid shape");;
+    }
+  }
+}
+input:5 5 5 5     input:4 7 4 7
+output:square     output:rectangle
+
+
+
+Q7. Java Program to calculate the distance between two points (x1,y1) and (x2,y2).
+import java.util.Scanner;
+public class q1 {
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    int x1=sc.nextInt();
+    int y1=sc.nextInt();
+    int x2=sc.nextInt();
+    int y2=sc.nextInt();
+    double d=Math.sqrt((Math.pow(x2-x1,2))+(Math.pow(y2-y1,2)));
+    System.out.println(d);
+    
+  }
+}
+input:2  3  6  9
+output:7.211102550927978
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
